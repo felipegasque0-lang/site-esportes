@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333
+}
+
+header{
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    
+}
+
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.noticias{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    width: 33%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 16px 18px 14px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card h3{
+    margin-bottom: 8px;
+    color: #004080;
+}
+
+  section[id]{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 16px 18px 14px rgba(0,0,0,0.1);
+}
+
+/*Responsividade*/
+@media (max-width: 768px){
+    .noticias{
+        display: block;
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+    }
+}
